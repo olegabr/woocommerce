@@ -491,7 +491,7 @@ add_action(
 	'woocommerce_sanitize_additional_field',
 	function ( $field_value, $field_key ) {
 		if ( 'namespace/gov-id' === $field_key ) {
-			$field_value = str_replace( ' ', '', $field_key );
+			$field_value = str_replace( ' ', '', $field_value );
 			$field_value = strtoupper( $field_value );
 		}
 		return $field_value;
